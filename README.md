@@ -2,6 +2,8 @@
 
 Este repositório contém um site simples desenvolvido para um trabalho acadêmico. O objetivo do projeto é reimaginar o site do Parque Nacional da Serra dos Órgãos em Teresópolis, apresentando informações sobre o parque de forma visual e funcional, seguindo as diretrizes estabelecidas pelo trabalho.
 
+Link para visualização: https://gabrielsmedina.github.io/Parque-nacional/
+
 ---
 
 ## 🎯 **Objetivo do Projeto**
