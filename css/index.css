@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 4rem 10%;
+  align-items: center;
+}
+
+.main-grid .image {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main-grid .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-grid .image img:hover {
+  transform: scale(1.1);
+}
+
+.main-grid .text h1 {
+  font-size: 2.5rem;
+  color: #006400;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-grid .text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.main-grid .text button {
+  background-color: #006400;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-grid .text button:hover {
+  background-color: #004d00;
+  transform: translateY(-5px);
+}
+
+.oque_fazemos {
+  background: linear-gradient(135deg, #d9f7dc 0%, #c1e1c1 100%);
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oque_fazemos:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.oque_fazemos h2 {
+  color: #006400;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.oque_fazemos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.oque_fazemos li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.oque_fazemos li strong {
+  color: #006400;
+}
+
+
+.adventure {
+  background: linear-gradient(135deg, #ffebcc 0%, #f4e3b2 100%);
+  padding: 3rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adventure:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.adventure h2 {
+  color: #006400;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.adventure p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.adventure button {
+  background-color: #006400;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.adventure button:hover {
+  background-color: #004d00;
+  transform: translateY(-5px);
+}
+
+.events {
+  background: linear-gradient(135deg, #d9f7dc 0%, #c1e1c1 100%);
+  padding: 3rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events h2 {
+  color: #006400;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.events ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.events li {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.events li strong {
+  color: #006400;
+  background: #d9f7dc;
+}
+
+.testimonial-video {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 3rem;
+  margin-top: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-video h2 {
+  color: #006400;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial-video .video {
+  text-align: center;
+}
+
+.testimonial-video iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-video iframe:hover {
+  transform: scale(1.05);
+}
+
+.extra-info {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.extra-info h2 {
+  color: #006400;
+}
+
+.extra-info p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.foco_li {
+  color: #004d00;
+  font-weight:700;
+}

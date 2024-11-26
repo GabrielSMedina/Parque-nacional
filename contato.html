@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Parque Nacional da Serra dos Órgãos</title>
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img src="assets/logo.jpg" class="logo" alt="Logo do Parque Nacional da Serra dos Órgãos">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="atividades.html">Atividades</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="main-contato">
+    <section class="intro">
+      <h1>Fale Conosco</h1>
+      <p>Se você tem alguma dúvida ou precisa de mais informações sobre o Parque Nacional da Serra dos Órgãos, entre em contato conosco através do formulário abaixo ou venha nos visitar.</p>
+    </section>
+
+    <section class="form-contato">
+      <h2>Envie sua mensagem</h2>
+      <form id="form-contato" onsubmit="return enviarMensagem(event)">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="mensagem-sucesso" class="mensagem" style="display: none;">
+        <p>Mensagem enviada com sucesso! Responderemos o mais breve possível.</p>
+      </div>
+
+      <div id="mensagem-erro" class="mensagem" style="display: none;">
+        <p>Ocorreu um erro ao enviar a sua mensagem. Por favor, tente novamente.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Parque Nacional da Serra dos Órgãos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts/contato.js"></script>
+</body>
+</html>

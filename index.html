@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Nacional da Serra dos Órgãos</title>
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img src="assets/logo.jpg" class="logo" alt="Logo do Parque Nacional da Serra dos Órgãos">
+    </a>
+  
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="atividades.html">Atividades</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="main-grid">
+    <div class="text">
+      <h1>Bem-vindo ao Parque Nacional da Serra dos Órgãos</h1>
+      <p>Um dos destinos mais impressionantes para os amantes da natureza e da aventura. Explore trilhas, cachoeiras e vistas deslumbrantes.</p>
+      <button id="toggle-info-btn">Saiba Mais</button>
+
+      <script>
+        document.getElementById("toggle-info-btn").addEventListener("click", function() {
+            const extraInfo = document.querySelector(".extra-info");
+            if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+                extraInfo.style.display = "block"; // Mostra o texto
+            } else {
+                extraInfo.style.display = "none"; // Oculta o texto
+            }
+        });
+    </script>
+
+    </div>
+    <div class="image" id="img1">
+      <img src="assets/p1.jpg" alt="Vista da Serra dos Órgãos">
+    </div>
+    <div class="extra-info">
+      <h2>Sobre o Parque</h2>
+      <p>O Parque Nacional da Serra dos Órgãos é uma Unidade de Conservação Federal de Proteção Integral, subordinada ao Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), cujo objetivo maior é o de preservar amostras representativas dos ecossistemas nacionais.</p>
+    </div>
+  </main>
+
+  <section class="oque_fazemos">
+    <h2>O que fazemos</h2>
+    <ul>
+      <li>
+        <span class="foco_li">Proteção Ambienta: </span>
+        A Coordenação de Proteção Ambiental é composta pelos setores de Fiscalização, Controle do Entorno e Prevenção e Combate a Incêndios Florestais, que atuam na fiscalização, licenciamento e prevenção de incêndios no parque e em seu entorno.
+      </li>
+      <li>
+        <span class="foco_li">Gestão e Manejo: </span>
+        Foco na conservação da biodiversidade, preservação de mananciais e potencial ecoturístico.
+      </li>
+      <li>
+        <span class="foco_li">Missão e Política: </span>
+        O Parque Nacional da Serra dos Órgãos visa conservar a Mata Atlântica, promover educação ambiental e ecoturismo, além de gerenciar recursos financeiros de unidades de conservação vizinhas.
+      </li>
+    </ul>
+  </section>
+
+  <section class="adventure">
+    <h2>Prepare-se para a Aventura</h2>
+    <p>Se você é fã de trilhas, escaladas ou apenas quer relaxar em meio à natureza, o Parque Nacional da Serra dos Órgãos é o lugar ideal. Venha viver momentos inesquecíveis em um dos mais belos parques do Brasil.</p>
+    <button id="explore">Explore Agora</button>
+
+    <script>
+      document.getElementById("explore").addEventListener("click", function () {
+        window.location.href = "atividades.html";
+      });
+    </script>
+  </section>
+
+  <section class="events">
+    <h2>Eventos</h2>
+    <ul>
+      <li>
+        <span class="foco_li">
+          Trilha Noturna - 15 de Dezembro
+        </span>
+        Uma experiência única para admirar o céu estrelado do parque.
+      </li>
+      <li>
+        <span class="foco_li">
+          Escalada no Pico Dedo de Deus - 5 de Janeiro
+        </span>
+        Venha escalar o ponto mais alto do parque.
+      </li>
+      <li>
+        <span class="foco_li">
+          Encontro de Observação de Fauna - 20 de Fevereiro
+        </span>
+        Acompanhe biólogos em uma expedição de observação de animais.
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonial-video">
+    <h2>O Que Dizem Sobre o Parque</h2>
+    <div class="video">
+      <iframe id="testemunhos-video" width="560" height="315" src="https://www.youtube.com/embed/EskNIRCxomg?si=FupAesAUNP4Iwown 
+          title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Parque Nacional da Serra dos Órgãos. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
